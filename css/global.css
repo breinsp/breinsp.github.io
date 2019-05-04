@@ -1,0 +1,68 @@
+body {
+    background: white;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(210, 210, 210, 1) 100%);
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 4rem auto;
+    min-height: 1200px;
+}
+
+.project{
+    margin-bottom: 6rem;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header, .header>* {
+    vertical-align: middle;
+}
+
+.content {
+    padding: 1rem;
+    position: relative;
+}
+
+img {
+    cursor: pointer;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+.project-image {
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.image-zoom {
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    bottom: 2rem;
+    left: 2rem;
+    transition: .2s;
+    z-index: 10;
+    font-size: 80px;
+    color: 0;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.project-image:hover+.image-zoom {
+    opacity: .7 !important;
+}
+
+.description{
+    font-size: 22px;
+    text-align: justify;
+    width: 100%;
+}
