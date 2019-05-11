@@ -1,20 +1,24 @@
-html{
+html {
     overflow-y: scroll;
     color: #2f353f;
 }
 
 body {
-    background: white;
-    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(220, 223, 227, 255) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(220,223,227,1) 100%);
     background-attachment: fixed;
     font-family: 'Lato', sans-serif;
     vertical-align: top;
     margin: 0;
 }
 
+.nav>a, .nav>span>a {
+    color: white !important;
+}
+
 a, a:visited, a:active, .a:focus {
-    color: white;
     text-decoration: none;
+    color: #ff3c3c;
 }
 
 .wrapper {
