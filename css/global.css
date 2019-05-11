@@ -3,6 +3,22 @@ body {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(210, 210, 210, 1) 100%);
     background-attachment: fixed;
     font-family: 'Lato', sans-serif;
+    vertical-align: top;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headline {
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #739bc6;
+    border-bottom: 4px solid #111111;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -11,7 +27,7 @@ body {
     min-height: 1200px;
 }
 
-.project{
+.project {
     margin-bottom: 6rem;
 }
 
@@ -55,14 +71,24 @@ img {
     font-size: 80px;
     color: 0;
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    cursor: pointer;
 }
 
-.project-image:hover+.image-zoom {
+.project-image:hover+.image-zoom, .image-zoom:hover {
     opacity: .7 !important;
 }
 
-.description{
+.description {
     font-size: 22px;
     text-align: justify;
     width: 100%;
+}
+
+.home-button {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 40px;
+    color: #212529;
+    cursor: pointer;
 }

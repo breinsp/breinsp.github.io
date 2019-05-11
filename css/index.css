@@ -1,0 +1,15 @@
+.image-button{
+    width: 100%;
+    display: inline-block;
+    margin: 0;     
+}
+
+.image-button>img{
+    width: 90%;
+    height: auto;
+    margin: 1rem 10%;
+}
+
+.wrapper{
+    padding: 0;
+}

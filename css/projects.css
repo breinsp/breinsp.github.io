@@ -1,0 +1,20 @@
+#img-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    display: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#img-modal-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
