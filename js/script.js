@@ -14,7 +14,10 @@ window.onload = function () {
         img.addEventListener("click", () => imageClick(img.src));
         var zoom = this.document.createElement("div");
         zoom.classList.add("image-zoom");
-        zoom.innerHTML="<i class='fas fa-search-plus'></i>";
+        var search = document.createElement("i");
+        search.classList.add("fas", "fa-search");
+        search.addEventListener("click", (e) => e.stopPropagation());
+        zoom.appendChild(search);
         img.parentElement.appendChild(zoom);
     }
 }
