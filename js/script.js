@@ -7,7 +7,7 @@ function imageClick(src) {
     //<img src='"+src+"' style='width:100%;'/>
 }
 
-window.onload = function () {
+function init() {
     var images = document.getElementsByClassName("project-image");
     for (let i = 0; i < images.length; i++) {
         const img = images[i];
@@ -21,3 +21,5 @@ window.onload = function () {
         img.parentElement.appendChild(zoom);
     }
 }
+
+init();
