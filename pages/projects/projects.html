@@ -8,7 +8,7 @@
     <title>Projects</title>
     <meta name="description" content="My Projects">
     <meta name="author" content="Bernhard Reinsprecht">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="pages/projects/projects.css">
 </head>
 
 <body>
@@ -21,11 +21,11 @@
                     <span>EXOHUNTER</span>
                 </div>
                 <div class="content">
-                    <p class="description">For our diploma thesis a friend and I developed a tool to find extrasolar planets. What turned out to
-                        be our biggest project yet is able to find traces of planetary existence in the brightness of distant
-                        stars. In theory, a stars brightness decreases if a large object, say a planet ten times the size
-                        of earth, transits inbetween the observer and the star itself. This periodc dampening of brightness
-                        can be detected by looking at light curves. The data for those light curves is provided by NASA and
+                    <p class="description">As diploma thesis for our school a colleague and I developed a tool to find extrasolar planets.
+                        The idea is to find traces of planetary existence in the brightness of distant stars.
+                        In theory, a stars brightness should decrease if a large object, say a planet ten times the size
+                        of earth, transits in between the observer and the light source itself. This periodic dampening of brightness
+                        can be detected by looking at patterns in light curves. The brightness data over certain time periods is provided by NASA and
                         is publicly available.
                     </p>
                     <img class="project-image" src="res/exohunter/HGANrTi.jpg" style="width:100%;" />
@@ -33,11 +33,11 @@
                 <div class="content">
                     <p class="description">
                         The tool utilizes a pattern recognition neural network, which is trained to find unusual behaviour in star luminosity. Once
-                        the planets are determined, further parameters can be calculated. By looking at the interval of occurence,
+                        the planets are determined, further parameters can be calculated. By looking at the interval of occurrence,
                         strength of dimming, and duration of the transit, properties like radius, mass, distance to star,
                         etc. are easily determined. We can even tell if a planet is likely to be habitable or hostile towards
-                        life. The idea is to use a peer network that shares computing power to process the enormous amounts
-                        of data by NASA and find new planets everday.
+                        life as we know it. The idea is to use a peer network that shares computing power to process the enormous amounts
+                        of data provided by NASA and ultimately find new planets that haven't been discovered before.
                     </p>
                     <img class="project-image" src="res/exohunter/exohunter_analysis.png" style="width:100%;" />
                 </div>
@@ -58,8 +58,8 @@
                 <div class="content">
                     <p class="description">The goal for this project was to automate the process of stacking photos of the night sky. As a result
                         of small camera error a single image can be too noisy. To reduce noise, multiple shots are taken
-                        with a small delay (up to a few seconds) before they are stacked on top of each other. However, due
-                        to earths rotation, the sky shifts a few degrees inbetween shots, which makes the task of stacking
+                        in a series before they are then stacked on top of each other. However, due
+                        to earths rotation, the sky shifts a few degrees between those shots, which makes the task of stacking
                         photos difficult. Deep Sky Stacker finds the same stars in a set of images and uses them to align
                         the samples, so the median/mean values can be determined. The tool is written in C# and utilizes
                         multi-threading to cope with the high performance demand.</p>
@@ -68,6 +68,7 @@
             </div>
 
             <!-- ASSET PLANET -->
+            <!--
             <div class="project">
                 <div class="header">
                     <img src="res/asset_planet_logo.png" style="height:70px; margin: 15px;" />
@@ -81,6 +82,7 @@
                     <img class="project-image" src="res/asset_planet/Web_1920_5.jpg" style="width:100%;" />
                 </div>
             </div>
+            -->
 
             <!-- 3D ADVENTURES -->
             <div class="project">
@@ -93,9 +95,13 @@
                         projects are in correlation with procedural generation. I am obsessed with the idea to generate landscapes,
                         objects, trees, even entire planets by just using mathematics. I achieved this goal by using Unreal
                         Engine 4(C++) and mainly Unity(C#) as a 3D engine. I have studied ways to make procedural generation
-                        as realistic looking as possible, while also maintaining performance using C++ dlls, multi-threading
+                        as realistic looking as possible, while also maintaining performance using multi-threading
                         and GPU utilization.</p>
-                    <img class="project-image" src="res/unity/Wfx02gv.jpg" style="width:100%;" />
+                    <img class="project-image" src="res/unity/EmIYSbm.jpg" style="width:100%;" />
+                </div>
+                <div class="content">
+                    <p class="description">Rings of saturn, 1 million particles</p>
+                    <img class="project-image" src="res/unity/saturn.png" style="width:100%;" />
                 </div>
                 <div class="content">
                     <p class="description">Simulation of a spiral galaxy</p>
@@ -120,6 +126,7 @@
             </div>
 
             <!-- ACCOUNT MANAGER -->
+            <!--
             <div class="project">
                 <div class="header">
                     <img src="res/account_manager_logo.ico" style="height:70px; margin: 15px;" />
@@ -131,6 +138,7 @@
                     <img class="project-image" src="res/account_mgr/manager.png" style="width:100%;" />
                 </div>
             </div>
+            -->
         </div>
     </div>
     </div>
